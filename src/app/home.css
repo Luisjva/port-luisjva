@@ -1,0 +1,233 @@
+main {
+	/* background: linear-gradient(180deg, #2f3551 -6.42%, #0097ff 121.12%); */
+	height: 100vh;
+	/* padding: 1vh; */
+	position: relative;
+}
+
+.home_section_container {
+	position: absolute;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+	padding: 1vh;
+
+	z-index: 100;
+}
+.home_section {
+	cursor: pointer;
+
+	height: 100%;
+	border-radius: 3vh;
+	transition: all 0.5s ease-in-out;
+	background-color: #2f355199;
+	/* overflow: auto; */
+	overflow: hidden;
+}
+.home_section--has-not-background {
+	background-color: transparent;
+	border-radius: 0;
+}
+.home_section:active {
+	transform: scale(0.96);
+	transition: all 0.1s ease-in-out;
+}
+.home_section--not-modal {
+	padding: 1vh;
+	position: absolute;
+}
+
+.home_section_word_init {
+	font-size: 4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	position: absolute;
+	z-index: 5;
+}
+
+.home_about-me {
+	width: 50vw;
+	height: 33.33vh;
+}
+.home_job-experience {
+	width: 25vw;
+	height: 33.33vh;
+
+	top: 33.33vh;
+}
+.home_skills {
+	width: 25vw;
+	height: 33.33vh;
+
+	top: 33.33vh;
+	left: 25vw;
+}
+.home_projects {
+	height: 66.66vh;
+	width: 50vw;
+
+	left: 50vw;
+	top: 33.33vh;
+}
+.home_references {
+	width: 50vw;
+	height: 33.33vh;
+
+	left: 0;
+	top: 66.66vh;
+}
+.home_contact {
+	width: 25vw;
+	height: 33.33vh;
+
+	left: 50vw;
+}
+.home_cv {
+	width: 25vw;
+	height: 33.33vh;
+
+	left: 75vw;
+}
+
+.open.home_section_container {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	cursor: default;
+	z-index: 1000;
+	padding: 0;
+	overflow: hidden;
+}
+.open .home_section {
+	transform: scale(1);
+	background-color: #2f3551;
+	cursor: default;
+	border-radius: 0;
+	padding: 1.5vh 10vw;
+	overflow: auto;
+}
+
+@media (max-width: 900px) or (min-height: 75vw) {
+	main {
+		overflow: auto;
+	}
+	main > div {
+		height: auto;
+		position: relative;
+		height: 125vw;
+		min-height: 100vh;
+	}
+
+	.home_about-me {
+		width: 66.66%;
+		height: 25%;
+	}
+	.home_job-experience {
+		width: 33.33%;
+		height: 25%;
+
+		top: 0;
+		left: 66.66%;
+	}
+	.home_references {
+		width: 66.66%;
+		height: 25%;
+
+		left: 0;
+		top: 25%;
+	}
+	.home_contact {
+		width: 33.33%;
+		height: 25%;
+
+		top: 25%;
+		left: 66.66%;
+	}
+	.home_cv {
+		width: 33.33%;
+		height: 25%;
+
+		left: 0;
+		top: 50%;
+	}
+	.home_projects {
+		height: 50%;
+		width: 66.66%;
+
+		left: 33.33%;
+		top: 50%;
+	}
+	.home_skills {
+		width: 33.33%;
+		height: 25%;
+
+		top: 75%;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	main > div {
+		height: auto;
+		position: relative;
+		height: 250vw;
+	}
+
+	.home_about-me {
+		width: 100%;
+		height: 16.666%;
+	}
+	.home_job-experience {
+		width: 50%;
+		height: 16.666%;
+
+		top: 16.666%;
+		left: 0%;
+	}
+	.home_references {
+		width: 50%;
+		height: 16.666%;
+
+		left: 50%;
+		top: 16.666%;
+	}
+	.home_contact {
+		width: 50%;
+		height: 16.666%;
+
+		top: calc(16.666% * 3);
+		left: 0%;
+	}
+	.home_cv {
+		width: 50%;
+		height: 16.666%;
+
+		left: 50%;
+		top: calc(16.666% * 3);
+	}
+	.home_projects {
+		width: 100%;
+		height: calc(16.666% * 2);
+
+		left: 0;
+		top: calc(16.666% * 4);
+	}
+	.home_skills {
+		width: 100%;
+		height: 15%;
+
+		top: calc(16.666% * 2);
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	main > div {
+		height: auto;
+		position: relative;
+		height: 290vw;
+	}
+}

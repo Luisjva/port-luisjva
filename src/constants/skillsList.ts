@@ -1,0 +1,15 @@
+export const skillsList = [
+	"HTML",
+	"CSS",
+	"Sass",
+	"JavaScript",
+	"TypeScript",
+	"React JS",
+	"Next JS",
+	"Redux",
+	"Vue",
+	"Tailwind",
+	"Node JS",
+	"Express JS",
+	"Git",
+];

@@ -1,0 +1,6 @@
+.experience {
+	padding: 1rem;
+}
+.experience .mantine-Timeline-itemTitle {
+	color: #fff !important;
+}
