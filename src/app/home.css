@@ -107,7 +107,7 @@ main {
 	cursor: default;
 	border-radius: 0;
 	padding: 1.5vh 10vw;
-	overflow: auto;
+	overflow-y: auto;
 }
 
 @media (max-width: 900px) or (min-height: 75vw) {

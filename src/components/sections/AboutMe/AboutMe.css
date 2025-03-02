@@ -80,7 +80,6 @@
 	border-radius: 0.75rem;
 	position: relative;
 	overflow: hidden;
-	cursor: pointer;
 }
 .about-me__beginnings__images .big {
 	grid-area: big;

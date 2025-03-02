@@ -1,7 +1,6 @@
 import { Box, Text } from "@mantine/core";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { PhotoProvider, PhotoView } from "react-photo-view";
 import {
 	container,
 	itemAnimation,
@@ -17,41 +16,34 @@ export const AboutMeMyBeginnings = () => (
 		animate="visible"
 		className="about-me__beginnings"
 	>
-		<PhotoProvider>
-			<div className="about-me__beginnings__images">
-				<PhotoView src={"/proy7.webp"}>
-					<Box className="big">
-						<Image
-							src="/proy7.webp"
-							alt="Picture of the author"
-							fill={true}
-							style={{ objectFit: "cover", objectPosition: "top" }}
-						/>
-					</Box>
-				</PhotoView>
+		<div className="about-me__beginnings__images">
+			<Box className="big">
+				<Image
+					src="/proy7.webp"
+					alt="Picture of the author"
+					fill={true}
+					style={{ objectFit: "cover", objectPosition: "top" }}
+				/>
+			</Box>
 
-				<PhotoView src={"/first-proyect.jpeg"}>
-					<Box className="secondary">
-						<Image
-							src="/first-proyect.jpeg"
-							alt="Picture of the author"
-							fill={true}
-							style={{ objectFit: "cover", objectPosition: "top" }}
-						/>
-					</Box>
-				</PhotoView>
-				<PhotoView src={"/proy4.webp"}>
-					<Box className="last">
-						<Image
-							src="/proy4.webp"
-							alt="Picture of the author"
-							fill={true}
-							style={{ objectFit: "cover", objectPosition: "top" }}
-						/>
-					</Box>
-				</PhotoView>
-			</div>
-		</PhotoProvider>
+			<Box className="secondary">
+				<Image
+					src="/first-proyect.jpeg"
+					alt="Picture of the author"
+					fill={true}
+					style={{ objectFit: "cover", objectPosition: "top" }}
+				/>
+			</Box>
+
+			<Box className="last">
+				<Image
+					src="/proy4.webp"
+					alt="Picture of the author"
+					fill={true}
+					style={{ objectFit: "cover", objectPosition: "top" }}
+				/>
+			</Box>
+		</div>
 
 		<Box>
 			<motion.div variants={itemAnimation}>
