@@ -2,6 +2,7 @@ import { Text } from "@mantine/core";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { container, itemAnimation } from "../helpers/motionAnimationContainer";
+import Image from "next/image";
 
 const containerWithDelay = {
 	...container,
@@ -48,14 +49,18 @@ export const Cv: React.FC<{
 					) : (
 						<>
 							<motion.div variants={itemAnimation}>
-								<img
+								<Image
 									src="/cv.jpeg"
-									width="100%"
-									height="100%"
+									alt="Vista previa del CV"
+									width={800}
+									height={1000}
 									style={{
+										width: "100%",
+										height: "100%",
 										objectFit: "cover",
 										objectPosition: "top",
 									}}
+									priority
 								/>
 								<motion.div
 									style={{
@@ -70,7 +75,6 @@ export const Cv: React.FC<{
 										alignItems: "center",
 										fontSize: "2rem",
 										zIndex: 200,
-										// color: colors.primary,
 									}}
 									variants={itemAnimation}
 								>

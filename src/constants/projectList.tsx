@@ -233,7 +233,7 @@ export const projectList: ProjectProps[] = [
 				<br />
 			</>
 		),
-		code: "https://github.com/Luisjva/portafolio-vercel",
+		code: "https://github.com/Luisjva/port-luisjva",
 		seeProject: null,
 		img: "/portafolio.jpeg",
 		id: 2,

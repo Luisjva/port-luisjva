@@ -3,6 +3,7 @@ import "./contact.css";
 import { ActionIcon } from "@mantine/core";
 import { contactMeList } from "@/constants/contactMeList";
 import { container, itemAnimation } from "@/helpers/motionAnimationContainer";
+import Image from "next/image";
 
 const containerWithDelay = {
 	...container,
@@ -37,9 +38,13 @@ export const Contact = () => {
 							aria-label={item.name}
 						>
 							{typeof item.icon === "string" ? (
-								<img
+								<Image
 									src={item.icon}
+									alt={item.name}
+									width={48}
+									height={48}
 									style={{ width: "3rem", height: "3rem" }}
+									priority
 								/>
 							) : (
 								<item.icon style={{ width: "50%", height: "50%" }} />

@@ -84,7 +84,10 @@ const content = [
 ] as {
 	key: string;
 	notModal?: boolean;
-	element: unknown;
+	element: React.ComponentType<{
+		open?: boolean;
+		setCurrentContent?: (key: string | null) => void;
+	}>;
 	animationWordInit: string;
 	elementInitialPosition: {
 		y: string;
@@ -105,8 +108,8 @@ export default function Home() {
 				background: `linear-gradient(180deg, ${colors.primary} -6.42%, ${colors.blue.light} 121.12%)`,
 				overflow: !currentContent ? "inherit" : "hidden",
 			}}
-			onScroll={(e) => setTopOpenPosition(e.target.scrollTop)}
-			onResize={(e) => setTopOpenPosition(e.target.scrollTop)}
+			onScroll={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
+			onResize={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
 		>
 			<div>
 				{content.map((item, index) => (

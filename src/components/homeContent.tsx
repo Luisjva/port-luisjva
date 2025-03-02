@@ -8,7 +8,10 @@ export interface HomeContentProps {
 	setCurrentContent: (key: string | null) => void;
 	currentContent: string | null;
 	index: number;
-	Element: any;
+	Element: React.ComponentType<{
+		open?: boolean;
+		setCurrentContent?: (key: string | null) => void;
+	}>;
 	notModal?: boolean;
 	animationWordInit: string | null;
 	elementInitialPosition: {
@@ -35,7 +38,7 @@ export const HomeContent = ({
 	canOpen = true,
 	topOpenPosition = 0,
 }: HomeContentProps) => {
-	const contenedorRef = useRef<Element | null>(null);
+	const contenedorRef = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		if (contenedorRef.current && currentContent !== id) {

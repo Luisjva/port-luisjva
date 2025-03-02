@@ -2,6 +2,7 @@ import { container, itemAnimation } from "@/helpers/motionAnimationContainer";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { projectList, ProjectProps } from "../../../constants";
+import Image from "next/image";
 
 const containerWithDelay = {
 	...container,
@@ -56,12 +57,15 @@ export const ProjectsImgList: React.FC<{
 							This project is in progress
 						</div>
 					) : (
-						<img
+						<Image
 							key={item.id}
 							onClick={() => handleClickImg(item)}
 							src={item.img}
 							alt={`imagen del proyecto ${item.name}`}
 							className={`projects__image p${item.position}`}
+							width={500}
+							height={300}
+							priority
 						/>
 					)}
 				</motion.div>
