@@ -104,12 +104,9 @@ export default function Home() {
 
 	return (
 		<main
-			style={{
-				background: `linear-gradient(180deg, ${colors.primary} -6.42%, ${colors.blue.light} 121.12%)`,
-				overflow: !currentContent ? "inherit" : "hidden",
-			}}
 			onScroll={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
 			onResize={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
+			className="animated-gradient-background"
 		>
 			<div>
 				{content.map((item, index) => (

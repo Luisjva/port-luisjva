@@ -10,14 +10,14 @@
 }
 .open .about-me__header {
 	height: auto;
-	padding: 15rem 1rem 1rem 1rem;
+	padding: 20rem 1rem 1rem 1rem;
 }
 .about-me__header__container {
 	width: 100%;
 	/* transition: 0.2s; */
 }
 .open .about-me__header__container {
-	width: 60%;
+	width: 50%;
 	background-color: #e5e5e599;
 	color: #000;
 	padding: 1rem;
@@ -27,7 +27,7 @@
 	position: relative;
 }
 .about-me__header__image {
-	background-image: url(/profile.JPG);
+	background-image: url(/header.JPG);
 	background-position: center;
 	background-size: cover;
 	width: 3.5rem;
@@ -37,7 +37,7 @@
 	transition: 0.75s;
 }
 .open .about-me__header__image {
-	background-position: 50% 40%;
+	background-position: 50% 30%;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -131,10 +131,10 @@
 }
 @media screen and (max-width: 600px) {
 	.open .about-me__header {
-		padding: 10rem 1rem 1rem 1rem;
+		padding: 18rem 1rem 1rem 1rem;
 	}
 	.open .about-me__header__image {
-		background-position: 50% 60%;
+		background-position: 60%;
 	}
 	.about-me__header__title {
 		font-size: 1.2rem;
@@ -147,15 +147,6 @@
 	}
 }
 @media screen and (max-width: 400px) {
-	.open .about-me__header {
-		padding: 5rem 1rem 1rem 1rem;
-	}
-	.open .about-me__header__image {
-		background-position: 50% 100%;
-	}
-	.open .about-me__header {
-		padding: 10rem 0.5rem 0.5rem 0.5rem;
-	}
 	.about-me__header__content {
 		font-size: 0.9rem;
 	}

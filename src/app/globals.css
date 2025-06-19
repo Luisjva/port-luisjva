@@ -30,6 +30,22 @@ a {
 	text-decoration: none;
 }
 
+.animated-gradient-background {
+	width: 100%;
+	height: 100vh; /* O el tamaño que necesites */
+	background: linear-gradient(180deg, #2f3551 -6.42%, #4dacff 121.12%);
+	background-size: 200% 200%; /* Duplicamos el tamaño para tener espacio para mover el gradiente */
+	animation: gradientAnimation 7s ease infinite alternate; /* Animación de 10s, suave, infinita y alterna */
+}
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 0%; /* Inicio de la animación */
+	}
+	100% {
+		background-position: 100% 100%; /* Fin de la animación */
+	}
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;
