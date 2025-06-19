@@ -1,9 +1,8 @@
-import { colors } from "@/config";
-import { skillsList } from "@/constants/skillsList";
 import { container, itemAnimation } from "@/helpers/motionAnimationContainer";
-import { Badge, Box, Text } from "@mantine/core";
+import { Text } from "@mantine/core";
 import { motion } from "framer-motion";
 import "./skill.css";
+import { AppleWatchDock } from "@/components/AppleWatchDock";
 
 const containerWithDelay = {
 	...container,
@@ -33,7 +32,7 @@ export const Skills = () => {
 					Habilidades técnicas
 				</Text>
 			</motion.div>
-			<Box className="skill-children">
+			{/* <Box className="skill-children">
 				{skillsList.map((item) => (
 					<motion.div variants={itemAnimation} key={item}>
 						<Badge
@@ -49,7 +48,8 @@ export const Skills = () => {
 						</Badge>
 					</motion.div>
 				))}
-			</Box>
+			</Box> */}
+			<AppleWatchDock />
 		</motion.div>
 	);
 };

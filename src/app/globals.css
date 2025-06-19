@@ -46,6 +46,14 @@ a {
 	}
 }
 
+.device {
+	overflow: hidden;
+	background: black;
+	border-radius: 50px;
+	position: relative;
+	contain: strict;
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;
