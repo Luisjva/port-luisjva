@@ -48,8 +48,8 @@ a {
 
 .device {
 	overflow: hidden;
-	background: black;
-	border-radius: 50px;
+	/* background-color: #2f355199; */
+	border-radius: 1rem;
 	position: relative;
 	contain: strict;
 }

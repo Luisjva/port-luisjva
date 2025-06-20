@@ -1,9 +1,9 @@
 export const icon = {
-	margin: 20,
-	size: 100,
+	margin: 15,
+	size: 50,
 };
 
 export const device = {
-	width: 368,
-	height: 448,
+	width: 200,
+	height: 200,
 };
