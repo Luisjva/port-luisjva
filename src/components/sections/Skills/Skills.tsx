@@ -2,7 +2,7 @@ import { AppleWatchDock } from "@/components/sections/Skills/WatchViuw";
 import { container, itemAnimation } from "@/helpers/motionAnimationContainer";
 import { Switch, Text, Tooltip } from "@mantine/core";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CiCircleList } from "react-icons/ci";
 import { PiCirclesThreeLight } from "react-icons/pi";
 import "./skill.css";
@@ -23,6 +23,14 @@ const containerWithDelay = {
 
 export const Skills = () => {
 	const [checked, setChecked] = useState(false);
+	const [openDelay, setOpenDelay] = useState(false);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setOpenDelay(true);
+		}, 3500);
+	}, []);
+
 	return (
 		<motion.div
 			variants={containerWithDelay}
@@ -59,7 +67,7 @@ export const Skills = () => {
 					</Tooltip>
 				</div>
 			</motion.div>
-			{checked ? <SkillsList /> : <AppleWatchDock />}
+			{openDelay && <>{checked ? <SkillsList /> : <AppleWatchDock />}</>}
 		</motion.div>
 	);
 };

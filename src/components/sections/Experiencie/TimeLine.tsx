@@ -64,9 +64,11 @@ const Timeline: React.FC<TimelineProps> = ({ workExperience, open }) => {
 							</Text>
 						</motion.div>
 						{!open && (
-							<Text size="xs" c="dimmed" mt="0.25rem">
-								Outstanding skills
-							</Text>
+							<motion.div variants={itemAnimation}>
+								<Text size="xs" c="dimmed" mt="0.25rem">
+									Outstanding skills
+								</Text>
+							</motion.div>
 						)}
 						<motion.div
 							variants={itemAnimation}
