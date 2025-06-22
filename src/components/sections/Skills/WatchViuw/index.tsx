@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { Item } from "./Item";
 import { Skill, skillsList } from "@/constants/skillsList";
-import { itemAnimation } from "@/helpers/motionAnimationContainer";
-import { from } from "env-var";
 
 // Download the Framer Beta: https://www.framer.com/beta/
 // Framer Beta API documentation: https://www.framer.com/api/
