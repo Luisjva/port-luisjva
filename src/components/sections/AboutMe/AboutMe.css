@@ -28,7 +28,7 @@
 	position: relative;
 }
 .about-me__header__image {
-	background-image: url(/header.JPG);
+	background-image: url(/header.jpg);
 	background-position: center;
 	background-size: cover;
 	width: 3.5em;
