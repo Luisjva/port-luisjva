@@ -10,7 +10,6 @@ import { AboutMe } from "../components/sections/AboutMe";
 import { Experience } from "../components/sections/Experiencie";
 import { Projects } from "../components/sections/Projects/Projects";
 import { Referencies } from "../components/sections/Referencies/Referencies";
-import { colors } from "../config";
 import "./home.css";
 
 const content = [
@@ -43,6 +42,7 @@ const content = [
 	},
 	{
 		key: "contact",
+		notModal: true,
 		element: Contact,
 		animationWordInit: "FRONT",
 		elementInitialPosition: {
@@ -75,7 +75,7 @@ const content = [
 		key: "skills",
 		notModal: true,
 		element: Skills,
-		animationWordInit: "PORTFOLIO",
+		animationWordInit: "",
 		elementInitialPosition: {
 			y: "0",
 			x: "110%",
@@ -105,7 +105,7 @@ export default function Home() {
 	return (
 		<main
 			onScroll={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
-			onResize={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
+			// onResize={(e) => setTopOpenPosition((e.target as Element).scrollTop)}
 			className="animated-gradient-background"
 		>
 			<div>

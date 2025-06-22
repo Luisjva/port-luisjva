@@ -173,7 +173,7 @@ main {
 	main > div {
 		height: auto;
 		position: relative;
-		height: 250vw;
+		height: 275vw;
 	}
 
 	.home_about-me {
@@ -224,10 +224,57 @@ main {
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
 	main > div {
 		height: auto;
 		position: relative;
-		height: 290vw;
+		height: 375vw;
+	}
+
+	.home_about-me {
+		width: 100%;
+		height: 14.285%;
+	}
+	.home_job-experience {
+		width: 100%;
+		height: 14.285%;
+
+		top: 14.285%;
+		left: 0%;
+	}
+	.home_references {
+		width: 100%;
+		height: 14.285%;
+
+		left: 0%;
+		top: calc(14.285% * 3);
+	}
+	.home_contact {
+		width: 50%;
+		height: 14.285%;
+
+		top: calc(14.285% * 4);
+		left: 0%;
+	}
+	.home_cv {
+		width: 50%;
+		height: 14.285%;
+
+		left: 50%;
+		top: calc(14.285% * 4);
+	}
+	.home_skills {
+		width: 100%;
+		height: 15%;
+
+		top: calc(14.285% * 2);
+		left: 0;
+	}
+	.home_projects {
+		width: 100%;
+		height: calc(14.285% * 2);
+
+		left: 0;
+		top: calc(14.285% * 5);
 	}
 }

@@ -9,8 +9,16 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@mantine/core": "^7.16.3",
-		"@mantine/hooks": "^7.16.3",
+		"@mantine/core": "^8.1.1",
+		"@mantine/hooks": "^8.1.1",
+		"@mantine/tiptap": "^8.1.1",
+		"@tiptap/extension-highlight": "^2.22.3",
+		"@tiptap/extension-link": "^2.22.2",
+		"@tiptap/extension-underline": "^2.22.3",
+		"@tiptap/pm": "^2.22.2",
+		"@tiptap/react": "^2.22.2",
+		"@tiptap/starter-kit": "^2.22.2",
+		"dayjs": "^1.11.13",
 		"framer-motion": "1.6.15",
 		"motion": "^12.4.3",
 		"next": "15.1.7",

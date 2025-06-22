@@ -24,3 +24,28 @@
 	background-color: #fff4;
 	border-radius: 5px;
 }
+
+.skill-list {
+	overflow: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 0.5rem;
+	margin-top: 1rem;
+	border-radius: 1rem;
+}
+.skill-list__item {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background-color: #fff1;
+
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	user-select: none;
+}
+.skill-list__item img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+	object-position: center;
+}

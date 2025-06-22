@@ -3,14 +3,72 @@ import { ForwardRefExoticComponent, SVGProps } from "react";
 import { FaBolt } from "react-icons/fa6";
 import { BsFillMegaphoneFill } from "react-icons/bs";
 import { BsFillBuildingFill } from "react-icons/bs";
-export const workExperience = [
+import { IconType } from "react-icons";
+
+export const workExperience: WorkExperience[] = [
 	{
+		jobPosition: "Full Stack Developer",
 		enterpriseName: "Nolatech",
-		durationTime: "January 2023 - Present",
+		durationTime: {
+			init: "01-01-2023",
+		},
 		location: "Remote",
-		jobPosition: "Frontend Developer",
-		jobDescriptionShort:
-			"• Developed various Administrative Panels (HUB/CMS) with on-demand features for multiple clients, aimed at managing high-impact information, built with React.js and Next.js, using tools such as Redux, Mui, Mantine, among others",
+		technologies: [
+			{
+				name: "HTML",
+			},
+			{
+				name: "CSS",
+			},
+			{
+				name: "JavaScript",
+			},
+			{
+				name: "TypeScript",
+				featured: true,
+			},
+			{
+				name: "React",
+				featured: true,
+			},
+			{
+				name: "Next",
+				featured: true,
+			},
+			{
+				name: "Redux",
+			},
+			{
+				name: "Mui",
+			},
+			{
+				name: "Mantine",
+			},
+			{
+				name: "Socket",
+			},
+			{
+				name: "Tailwind",
+			},
+			{
+				name: "Git",
+			},
+			{
+				name: "Node",
+				featured: true,
+			},
+			{
+				name: "Express",
+				featured: true,
+			},
+			{
+				name: "MySQL",
+			},
+			{
+				name: "MongoDB",
+				featured: true,
+			},
+		],
 		icon: FaBolt,
 		jobDescription: (
 			<List spacing="md" center>
@@ -52,12 +110,35 @@ export const workExperience = [
 	},
 	{
 		enterpriseName: "Freelancer",
-		durationTime: "July 2022 – December 2022",
+		durationTime: {
+			init: "July 2022",
+			since: "December 2022",
+		},
+		technologies: [
+			{
+				name: "React",
+				featured: true,
+			},
+			{
+				name: "Next",
+				featured: true,
+			},
+			{
+				name: "Node",
+				featured: true,
+			},
+			{
+				name: "MongoDB",
+				featured: true,
+			},
+			{
+				name: "MySQL",
+				featured: true,
+			},
+		],
+		icon: BsFillMegaphoneFill,
 		location: "Remote",
 		jobPosition: "Fullstack Developer",
-		jobDescriptionShort:
-			"Developed and optimized projects of various kinds, taking on support roles to correct and improve existing functionalities",
-		icon: BsFillMegaphoneFill,
 		jobDescription: (
 			<List spacing="md" center>
 				<List.Item>
@@ -79,11 +160,30 @@ export const workExperience = [
 	},
 	{
 		enterpriseName: "Ultrabodegon",
-		durationTime: "January 2022– July 2022",
+		durationTime: {
+			init: "January 2022",
+			since: "July 2022",
+		},
+		technologies: [
+			{
+				name: "React",
+				featured: true,
+			},
+			{
+				name: "Next",
+				featured: true,
+			},
+			{
+				name: "Node",
+				featured: true,
+			},
+			{
+				name: "MongoDB",
+				featured: true,
+			},
+		],
 		location: "Remote",
 		jobPosition: "Fullstack Developer",
-		jobDescriptionShort:
-			"Developed a comprehensive solution for a small local establishment using Next.js and MySQL, which included:",
 		icon: BsFillBuildingFill,
 		jobDescription: (
 			<>
@@ -117,22 +217,19 @@ export const workExperience = [
 			</>
 		),
 	},
-] as {
-	enterpriseName: string;
-	durationTime: string;
-	location: "Remote";
-	jobDescriptionShort: string;
-	jobDescription: React.ReactNode;
-	jobPosition: string;
-	icon: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref">>;
-}[];
+];
 
 export type WorkExperience = {
-	enterpriseName: string;
-	durationTime: string;
-	location: "Remote";
-	jobDescriptionShort: string;
-	jobDescription: React.ReactNode;
 	jobPosition: string;
-	icon: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref">>;
+	enterpriseName: string;
+	durationTime: {
+		init: string;
+		since?: string;
+	};
+	location: "Remote" | "On-site";
+	technologies: { name: string; featured?: boolean }[];
+	jobDescription: React.ReactNode;
+	icon:
+		| ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref">>
+		| IconType;
 };

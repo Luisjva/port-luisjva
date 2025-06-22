@@ -47,7 +47,7 @@ export const AppleWatchDock = () => {
 		};
 		setTimeout(() => {
 			getDeviceSize();
-		}, 1000);
+		}, 100);
 		// window.addEventListener("resize", getDeviceSize);
 		// return () => {
 		// 	window.removeEventListener("resize", getDeviceSize);

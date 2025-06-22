@@ -27,7 +27,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="es">
 			<head>
 				<meta name="theme-color" content="#2F3551" />
 				<title>Portafolio - Luis Villegas</title>

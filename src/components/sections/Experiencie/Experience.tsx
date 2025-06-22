@@ -44,7 +44,7 @@ export const Experience: React.FC<{ open: boolean }> = ({ open }) => {
 			animate="visible"
 		>
 			<motion.div variants={itemAnimation}>
-				<Text style={{ fontWeight: 600, fontSize: "1.2rem" }}>
+				<Text style={{ fontWeight: 600, fontSize: "1.5rem" }}>
 					Work Experience
 				</Text>
 			</motion.div>

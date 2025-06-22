@@ -11,6 +11,7 @@ export interface HomeContentProps {
 	Element: React.ComponentType<{
 		open?: boolean;
 		setCurrentContent?: (key: string | null) => void;
+		currentContent?: string | null;
 	}>;
 	notModal?: boolean;
 	animationWordInit: string | null;
@@ -47,7 +48,7 @@ export const HomeContent = ({
 				behavior: "smooth", // Puedes usar 'auto' o 'smooth'
 			});
 		}
-	}, [currentContent]);
+	}, [currentContent, id]);
 
 	if (notModal) {
 		return (
@@ -154,6 +155,7 @@ export const HomeContent = ({
 					<Element
 						open={currentContent === id}
 						setCurrentContent={setCurrentContent}
+						currentContent={currentContent}
 					/>
 				</div>
 			</motion.div>

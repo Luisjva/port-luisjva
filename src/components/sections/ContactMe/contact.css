@@ -8,3 +8,66 @@
 	margin: auto;
 	width: 100%;
 }
+
+/* Modal */
+.contact__modal .mantine-Modal-body {
+	padding: 0;
+}
+.contact__modal .mantine-Modal-overlay {
+	backdrop-filter: blur(5px);
+}
+.contact__modal .mantine-Modal-content {
+	background-color: #2f3551;
+	border-radius: 1rem;
+}
+
+.contact__modal-header {
+	margin: 0 1rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1rem;
+	align-items: center;
+}
+.contact__modal-header > div > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact__modal .mantine-TextInput-input,
+.contact__modal .mantine-Textarea-input {
+	background-color: transparent;
+	border-radius: 0.5rem;
+	border: 1px solid #fff2;
+	color: #fff;
+}
+
+.contact__modal .mantine-RichTextEditor-root {
+	min-height: 150px;
+}
+.contact__modal .mantine-RichTextEditor-toolbar,
+.contact__modal .mantine-RichTextEditor-root {
+	border-radius: 0.5rem;
+	border: 1px solid #fff2;
+}
+.contact__modal .mantine-RichTextEditor-controlIcon:hover {
+	background-color: #fff1;
+}
+.contact__modal .mantine-RichTextEditor-content {
+	background-color: transparent;
+}
+
+.contact__modal form {
+	padding: 1rem;
+	padding-top: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.contact__modal-success {
+	background-color: #fff1;
+	margin: 0;
+}

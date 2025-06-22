@@ -3,6 +3,7 @@ import { motion, MotionValue, useMotionValue } from "framer-motion";
 import { icon } from "./settings";
 import { useIconTransform } from "./use-icon-transform";
 import { Skill } from "@/constants/skillsList";
+import Image from "next/image";
 
 export function Item({
 	row,
@@ -55,13 +56,15 @@ export function Item({
 				alignItems: "center",
 			}}
 		>
-			<img
+			<Image
 				src={col.icon}
 				alt={col.name}
+				width={icon.size}
+				height={icon.size}
 				style={{
-					width: "80%",
-					height: "80%",
 					objectFit: "contain",
+					padding: ".65rem",
+					borderRadius: "15px",
 				}}
 			/>
 		</motion.div>

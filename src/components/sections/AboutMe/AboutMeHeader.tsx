@@ -34,16 +34,10 @@ export const AboutMeHeader = ({ open }: { open: boolean }) => (
 		></motion.div>
 		<Box className={"about-me__header__container"}>
 			{!open && (
-				<>
+				<div style={{ marginLeft: "4.25em", minHeight: "3.5em" }}>
 					<motion.div
 						variants={itemAnimation}
 						className="about-me__header__name"
-						style={{
-							fontWeight: 600,
-							fontSize: "1.65rem",
-							lineHeight: "1.65rem",
-							marginTop: ".2rem",
-						}}
 					>
 						Luis Villegas
 					</motion.div>
@@ -52,20 +46,17 @@ export const AboutMeHeader = ({ open }: { open: boolean }) => (
 						className="about-me__header__name"
 						style={{
 							color: open ? "#000c" : "#fff7",
-							fontSize: ".95rem",
-							lineHeight: ".95rem",
+							fontSize: "1em",
 						}}
 					>
 						Full stack programmer
 					</motion.div>
-				</>
+				</div>
 			)}
 			<motion.div variants={itemAnimation}>
 				<Text
 					style={{
 						color: open ? colors.primary : "#fff",
-						fontWeight: 600,
-						transition: "color .6s",
 					}}
 					className="about-me__header__title"
 				>

@@ -65,8 +65,8 @@ export const AboutMeMyBeginnings = () => (
 					}}
 					mt={".25rem"}
 				>
-					The pandemic transformed many people&apos;s lives. In my case, it was
-					the starting point for diving into the world of programming.
+					The pandemic changed the lives of many people. In my case, it was the
+					starting point for me to delve into the world of programming.
 				</Text>
 			</motion.div>
 
@@ -78,24 +78,27 @@ export const AboutMeMyBeginnings = () => (
 						opacity: 0.8,
 					}}
 				>
-					When the pandemic started and I had a lot of free time, I decided to
-					learn <b>HTML</b> through YouTube courses with the idea of creating
-					attractive websites. At first, my pages weren&apos;t very appealing,
-					but after learning <b>CSS</b> and being able to add styles, everything
-					improved considerably. However, I still needed to improve my
-					programming skills significantly.
+					Taking advantage of my free time, I began learning <b>HTML</b> through
+					YouTube courses, motivated by the idea of creating interactive
+					websites. My first pages weren&apos;t visually appealing, but after
+					learning <b>CSS</b> and incorporating styles, things started to
+					improve considerably. Still, I knew I needed to keep perfecting my
+					skills.
 					<br />
 					<br />
-					At that time, it was all for fun, but when I started learning{" "}
-					<b>JavaScript</b> and discovered its full potential, I decided to take
-					programming more seriously. I continued deepening my knowledge and
-					began studying <b>React</b>.
+					At first, it was just a hobby, but when I discovered <b>
+						JavaScript
+					</b>{" "}
+					and its true potential, I decided to take it seriously. Since then, I
+					haven&apos;t stopped learning and deepening my knowledge, especially
+					in
+					<b>React</b>.
 					<br />
 					<br />
-					Over time, I gained solid mastery of frontend libraries like React,
-					Vue, and Next.js. I created several personal projects to build a small
-					portfolio, which allowed me to start searching for my first work
-					experience.
+					Over time, I mastered libraries like <b>React</b>, <b>Vue</b>,{" "}
+					<b>Next.js</b>, and <b>Node.js</b>, and developed several personal
+					projects that allowed me to build a solid portfolio. This marked the
+					beginning of my professional journey as a front-end developer.
 				</Text>
 			</motion.div>
 		</Box>

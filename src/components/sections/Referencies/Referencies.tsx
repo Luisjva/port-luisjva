@@ -65,7 +65,7 @@ export const Referencies: React.FC<{ open: boolean }> = ({ open }) => {
 			className={`experience ${open && "open"}`}
 		>
 			<motion.div variants={itemAnimation}>
-				<Text style={{ fontWeight: 600, fontSize: "1.2rem" }}>
+				<Text style={{ fontWeight: 600, fontSize: "1.5rem" }}>
 					Personal References
 				</Text>
 			</motion.div>

@@ -1,8 +1,12 @@
+import { AppleWatchDock } from "@/components/sections/Skills/WatchViuw";
 import { container, itemAnimation } from "@/helpers/motionAnimationContainer";
-import { Text } from "@mantine/core";
+import { Switch, Text, Tooltip } from "@mantine/core";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { CiCircleList } from "react-icons/ci";
+import { PiCirclesThreeLight } from "react-icons/pi";
 import "./skill.css";
-import { AppleWatchDock } from "@/components/AppleWatchDock";
+import { SkillsList } from "./SkillsList";
 
 const containerWithDelay = {
 	...container,
@@ -18,6 +22,7 @@ const containerWithDelay = {
 };
 
 export const Skills = () => {
+	const [checked, setChecked] = useState(false);
 	return (
 		<motion.div
 			variants={containerWithDelay}
@@ -26,30 +31,35 @@ export const Skills = () => {
 			className="skill"
 		>
 			<motion.div variants={itemAnimation}>
-				<Text
-					style={{ fontWeight: 600, fontSize: "1.2rem", textAlign: "center" }}
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						alignItems: "center",
+						gap: "1rem",
+					}}
 				>
-					Habilidades técnicas
-				</Text>
+					<Text
+						style={{ fontWeight: 600, fontSize: "1.2rem", textAlign: "center" }}
+					>
+						Skill
+					</Text>
+					<Tooltip
+						label={checked ? "Ver en círculos" : "Ver ordenado en una lista"}
+						refProp="rootRef"
+					>
+						<Switch
+							size="md"
+							color="dark.4"
+							onLabel={<PiCirclesThreeLight size={18} color="#fff" />}
+							offLabel={<CiCircleList size={16} color="#000" />}
+							checked={checked}
+							onChange={(e) => setChecked(e.target.checked)}
+						/>
+					</Tooltip>
+				</div>
 			</motion.div>
-			{/* <Box className="skill-children">
-				{skillsList.map((item) => (
-					<motion.div variants={itemAnimation} key={item}>
-						<Badge
-							variant="outline"
-							color="white"
-							size="lg"
-							style={{
-								borderColor: "transparent",
-								backgroundColor: colors.primary + 99,
-							}}
-						>
-							{item}
-						</Badge>
-					</motion.div>
-				))}
-			</Box> */}
-			<AppleWatchDock />
+			{checked ? <SkillsList /> : <AppleWatchDock />}
 		</motion.div>
 	);
 };
