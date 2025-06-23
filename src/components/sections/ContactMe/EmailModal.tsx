@@ -62,28 +62,49 @@ export const EmailModal = ({
 		subject: "",
 		content: "",
 	});
-	const sendEmail = () => {
+	const sendEmail = async () => {
 		if (!!error?.name || !!error?.email || !!error?.subject || !!error?.content)
 			return;
 
 		setLoading(true);
 		setSendStatus(null);
-		setTimeout(() => {
-			setLoading(false);
-			setSendStatus("success");
-			setData({
-				name: "",
-				email: "",
-				subject: "",
-				content: "",
-			});
-			editor?.commands.setContent("");
-			// close();
-		}, 2000);
-		console.log("send email", data);
-	};
+		const url = process.env.NEXT_PUBLIC_EMAIL_SERVICE;
 
-	console.log("error", error);
+		if (typeof url !== "string") {
+			setSendStatus("error");
+			return;
+		}
+
+		await fetch(url, {
+			method: "POST",
+			body: JSON.stringify({
+				email: "luisjva16@gmail.com",
+				subject: `From Portfolio of ${data.email} - ${data.subject}`,
+				content: `
+					<div>
+						${data.content}
+						<hr>
+						<p><b>Email subject:</b>${data.subject}</p>
+						<p><b>Sender name:</b> ${data.name}</p>
+						<p><b>Sender email:</b> ${data.email}</p>
+					</div>
+				`,
+			}),
+		})
+			.then(() => {
+				setSendStatus("success");
+				setData({
+					content: "",
+					email: "",
+					name: "",
+					subject: "",
+				});
+				editor?.commands.setContent("");
+			})
+			.catch((error) => console.log("error", error));
+
+		setLoading(false);
+	};
 
 	return (
 		<Modal
@@ -229,7 +250,7 @@ export const EmailModal = ({
 							data.name.trim().length < 1 ||
 							!emailRegex.test(data.email.trim()) ||
 							data.subject.trim().length < 5 ||
-							!(editor?.getText() && editor?.getText().trim().length > 15)
+							!!(editor?.getText() && editor?.getText().trim().length < 15)
 						}
 						loading={loading}
 					>
