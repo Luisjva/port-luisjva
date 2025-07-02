@@ -5,7 +5,7 @@ import { HomeContent } from "../components/homeContent";
 
 import { Contact } from "@/components/sections/ContactMe";
 import { Skills } from "@/components/sections/Skills";
-import { Cv } from "../components/cv";
+import { Cv } from "../components/sections/Cv/cv";
 import { AboutMe } from "../components/sections/AboutMe";
 import { Experience } from "../components/sections/Experiencie";
 import { Projects } from "../components/sections/Projects/Projects";
@@ -61,6 +61,7 @@ const content = [
 			x: "110%",
 		},
 		animationWordPosition: "right",
+		notModal: true,
 	},
 	{
 		key: "projects",

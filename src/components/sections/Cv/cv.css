@@ -1,0 +1,14 @@
+.home__cv {
+	height: 100%;
+	border-radius: 1rem;
+	transition: 0.5s;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem;
+}
+.home__cv:hover {
+	background-color: #2f355199;
+}

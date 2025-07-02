@@ -128,6 +128,10 @@ export const workExperience: WorkExperience[] = [
 				featured: true,
 			},
 			{
+				name: "Express",
+				featured: true,
+			},
+			{
 				name: "MongoDB",
 				featured: true,
 			},
