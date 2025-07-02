@@ -58,14 +58,12 @@ export const Cv: React.FC<{
 
 	return (
 		<div className={`home__cv`} onClick={handleDownloadCV}>
-			<Group justify="space-between">
-				<Text fw={800} style={{ fontSize: "1.6rem" }}>
-					📎 ¿Quieres saber más?
-				</Text>
-			</Group>
+			<Text fw={800} style={{ fontSize: "1.6rem", textAlign: "center" }}>
+				Want to know more?{" "}
+			</Text>
 
-			<Text style={{ color: "#fffb", fontSize: "1.1rem" }}>
-				Descarga mi CV y descubre cómo puedo aportar a tu equipo.
+			<Text style={{ color: "#fffb", fontSize: "1.1rem", textAlign: "center" }}>
+				Click to download my CV and discover how I can contribute to your team.
 			</Text>
 
 			<Center>

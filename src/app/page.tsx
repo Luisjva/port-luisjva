@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { HomeContent } from "../components/homeContent";
 
@@ -102,6 +102,19 @@ const content = [
 export default function Home() {
 	const [currentContent, setCurrentContent] = useState<string | null>(null);
 	const [topOpenPosition, setTopOpenPosition] = useState(0);
+
+	useEffect(() => {
+		const escapeKey = (e: KeyboardEvent) => {
+			if (e.key === "Escape") {
+				setCurrentContent(null);
+			}
+		};
+
+		document.addEventListener("keydown", escapeKey);
+		return () => {
+			document.removeEventListener("keydown", escapeKey);
+		};
+	}, []);
 
 	return (
 		<main

@@ -27,8 +27,8 @@ export interface HomeContentProps {
 
 export const HomeContent = ({
 	id,
-	setCurrentContent,
 	currentContent,
+	setCurrentContent,
 	index,
 	notModal = false,
 	Element,
