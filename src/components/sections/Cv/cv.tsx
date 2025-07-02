@@ -1,41 +1,26 @@
-import {
-	Badge,
-	Button,
-	Card,
-	Group,
-	Text,
-	useMantineTheme,
-	Center,
-	Loader,
-} from "@mantine/core";
-import { motion } from "framer-motion"; // <-- ¡Aquí está!
+import { Center, Loader, Text } from "@mantine/core";
 import { useState } from "react";
-import {
-	container,
-	itemAnimation,
-} from "../../../helpers/motionAnimationContainer";
 
-import "./cv.css";
 import { TbDownload } from "react-icons/tb";
+import "./cv.css";
 
 // Variante para el contenedor principal, ajustando el delayChildren
-const containerWithDelay = {
-	...container,
-	visible: {
-		...container.visible,
-		transition: {
-			...container.visible.transition,
-			delayChildren: 0.8,
-		},
-	},
-};
+// const containerWithDelay = {
+// 	...container,
+// 	visible: {
+// 		...container.visible,
+// 		transition: {
+// 			...container.visible.transition,
+// 			delayChildren: 0.8,
+// 		},
+// 	},
+// };
 
 export const Cv: React.FC<{
 	open: boolean;
 }> = () => {
 	const [isDownloading, setIsDownloading] = useState(false);
 	const [downloadComplete, setDownloadComplete] = useState(false);
-	const theme = useMantineTheme();
 
 	const handleDownloadCV = () => {
 		if (isDownloading || downloadComplete) return;
