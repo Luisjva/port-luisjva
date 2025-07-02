@@ -36,7 +36,7 @@ const ReferenceItem: React.FC<{
 				transition: {
 					delayChildren: 0.25,
 					staggerChildren: 0.25,
-					duration: 0.5,
+					duration: 0.75,
 					delay: childrenPosition * 0.25,
 				},
 			},
@@ -118,7 +118,7 @@ export const Referencies: React.FC<{ open: boolean }> = ({ open }) => {
 												<ReferenceItem
 													item={item}
 													open={open}
-													childrenPosition={index}
+													childrenPosition={!(index % 2) ? index : index + 1}
 												/>
 											</motion.div>
 										</Grid.Col>
@@ -137,9 +137,7 @@ export const Referencies: React.FC<{ open: boolean }> = ({ open }) => {
 												<ReferenceItem
 													item={item}
 													open={open}
-													childrenPosition={
-														index + personalReferencesList.length / 2
-													}
+													childrenPosition={index % 2 ? index : index + 1}
 												/>
 											</motion.div>
 										</Grid.Col>
