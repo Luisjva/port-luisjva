@@ -10,7 +10,7 @@ import { AboutMe } from "../components/sections/AboutMe";
 import { Experience } from "../components/sections/Experiencie";
 import { Projects } from "../components/sections/Projects/Projects";
 import { Referencies } from "../components/sections/Referencies/Referencies";
-import "./home.css";
+import "../styles/home.css";
 
 const content = [
 	{

@@ -1,0 +1,31 @@
+.benefits {
+	color: #eaeef3;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+}
+
+.benefits > div > p {
+	color: #b0b8c9;
+}
+
+.benefitsContainer {
+	background-color: #2f3551;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+	padding: 1rem 2rem;
+	position: relative;
+	height: 100%;
+}
+.benefitsContainer > div {
+	font-size: 2.25rem;
+}
+.benefitsContainer > h3 {
+	font-size: 1.25rem;
+	line-height: calc(1.75 / 1.25);
+	font-weight: 600;
+}
+.benefitsContainer > p {
+	font-size: 1rem;
+	color: #b0b8c9;
+}
