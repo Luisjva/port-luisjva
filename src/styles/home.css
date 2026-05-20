@@ -112,10 +112,11 @@ main {
 
 @media (max-width: 900px) or (min-height: 75vw) {
 	main {
-		overflow: auto;
+		height: auto;
+		min-height: 100vh;
+		overflow: visible;
 	}
 	main > div {
-		height: auto;
 		position: relative;
 		height: 125vw;
 		min-height: 100vh;

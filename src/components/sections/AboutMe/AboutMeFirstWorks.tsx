@@ -23,7 +23,7 @@ export const AboutMeFirstWorks = ({
 								opacity: 0.8,
 							}}
 						>
-							Summary of my work experience
+							Nolatech & Epale — where I grew up as a developer
 						</Text>
 					</motion.div>
 					<motion.div variants={itemAnimation}>
@@ -34,8 +34,8 @@ export const AboutMeFirstWorks = ({
 							}}
 							mt={".25rem"}
 						>
-							Getting your first job wasn&apos;t easy, but with perseverance and
-							determination, anything is possible.
+							I joined as a Junior Frontend, got promoted twice, and ended up
+							leading a team of three.
 						</Text>
 					</motion.div>
 				</Box>
@@ -71,26 +71,32 @@ export const AboutMeFirstWorks = ({
 				opacity: 0.8,
 			}}
 		>
-			After a period of self-taught training, I began my professional journey
-			solving real-world technical challenges in collaborative development
-			environments. In these three years, I&apos;ve worked on modern web
-			applications, designing and building frontends in <b>React</b> and
-			backends with <b>Node.js</b>. I&apos;ve used best practices, design
-			principles, and tools such as <b>Next.js</b>, <b>TypeScript</b>,{" "}
-			<b>Tailwind</b>, <b>Zustand</b>, <b>Express.js</b>, and others.
+			I joined <b>Nolatech</b> in August 2021 as a <b>Junior Frontend</b>,
+			learning the craft inside a consultancy that ships both client work and
+			its own products. By February 2023 I had grown into a{" "}
+			<b>Mid Full Stack</b> role, and in March 2024 I was promoted to{" "}
+			<b>Tech Lead</b> — three and a half years that shaped how I think about
+			software today.
 			<br />
 			<br />
-			I&apos;ve led and participated in projects where improving front-end
-			architecture, reducing technical debt, and optimizing the user experience
-			were key. From implementing real-time workflows to designing reusable
-			components and maintaining a consistent UI, my work has contributed to
-			improved performance, scaling functionality, and facilitating cross-team
-			collaboration.
+			My main project was <b>Epale</b>, a social messaging app available on the
+			App Store and on web for the general consumer. I led the development of
+			the web version with <b>React</b>, <b>Socket.io</b> and <b>Node.js</b>:
+			P2P and group chats, audio/video/image sharing, live polls, push
+			notifications and adaptive media optimization based on the user&apos;s
+			bandwidth. I worked side by side with the Product Owner and PM to define
+			and prioritize features for both the product and its internal management
+			dashboard.
 			<br />
 			<br />
-			My way of adding value goes beyond code: I&apos;m involved in technical
-			decisions, I practice pair programming, and I promote a development
-			culture focused on quality and continuous improvement.
+			As Tech Lead I owned the technical direction for a team of three
+			developers. Within the first two months I lifted{" "}
+			<b>tickets closed per sprint by 20%</b> and visibly reduced QA-reported
+			issues by combining pair programming, unblocking sessions and actionable
+			documentation. I also pushed performance work across client products —{" "}
+			<b>+50% in load and runtime</b> via memoization, lazy loading, code
+			splitting and smarter caching — and standardized our practices through
+			reusable component libraries and consistent code reviews.
 		</Text>
 	</div>
 );

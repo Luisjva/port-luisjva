@@ -53,7 +53,7 @@ export const AboutMeMyBeginnings = () => (
 						opacity: 0.8,
 					}}
 				>
-					My beginnings
+					From circuits to code
 				</Text>
 			</motion.div>
 
@@ -65,8 +65,9 @@ export const AboutMeMyBeginnings = () => (
 					}}
 					mt={".25rem"}
 				>
-					The pandemic changed the lives of many people. In my case, it was the
-					starting point for me to delve into the world of programming.
+					I started in Electrical & Electronic Engineering and ended up
+					building AI-powered platforms — systems thinking was always the
+					bridge.
 				</Text>
 			</motion.div>
 
@@ -78,27 +79,25 @@ export const AboutMeMyBeginnings = () => (
 						opacity: 0.8,
 					}}
 				>
-					Taking advantage of my free time, I began learning <b>HTML</b> through
-					YouTube courses, motivated by the idea of creating interactive
-					websites. My first pages weren&apos;t visually appealing, but after
-					learning <b>CSS</b> and incorporating styles, things started to
-					improve considerably. Still, I knew I needed to keep perfecting my
-					skills.
+					I spent four years studying <b>Electrical & Electronic Engineering</b>{" "}
+					at UNEXPO (Venezuela), wiring circuits and reasoning about systems
+					end-to-end. Somewhere along the way I realized the same mindset —
+					decomposing a problem, designing the flow, measuring what happens —
+					translated almost perfectly to software.
 					<br />
 					<br />
-					At first, it was just a hobby, but when I discovered <b>
-						JavaScript
-					</b>{" "}
-					and its true potential, I decided to take it seriously. Since then, I
-					haven&apos;t stopped learning and deepening my knowledge, especially
-					in
-					<b>React</b>.
+					That click pulled me into web development. I went deep on{" "}
+					<b>JavaScript</b>, then on <b>React</b>, <b>Next.js</b> and{" "}
+					<b>Node.js</b>, and started shipping real products. Over the next few
+					years I worked across the full stack — from real-time multimedia
+					apps to internal dashboards — and grew into a Tech Lead role.
 					<br />
 					<br />
-					Over time, I mastered libraries like <b>React</b>, <b>Vue</b>,{" "}
-					<b>Next.js</b>, and <b>Node.js</b>, and developed several personal
-					projects that allowed me to build a solid portfolio. This marked the
-					beginning of my professional journey as a front-end developer.
+					Today my focus is the intersection of product engineering and{" "}
+					<b>AI automation</b>: <b>LLMs</b>, <b>RAG</b>, conversational agents
+					and multichannel workflows. I&apos;m most interested in building
+					platforms where AI is not a demo, but a measurable lever for the
+					business behind it.
 				</Text>
 			</motion.div>
 		</Box>

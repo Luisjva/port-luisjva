@@ -49,7 +49,7 @@ export const AboutMeHeader = ({ open }: { open: boolean }) => (
 							fontSize: "1em",
 						}}
 					>
-						Full stack programmer
+						Full Stack Developer · AI Automation
 					</motion.div>
 				</div>
 			)}
@@ -60,7 +60,8 @@ export const AboutMeHeader = ({ open }: { open: boolean }) => (
 					}}
 					className="about-me__header__title"
 				>
-					Frontend Developer with 3 years of experience in React
+					Full Stack Developer with 5 years building React, Next.js &
+					AI-powered platforms
 				</Text>
 			</motion.div>
 			<motion.div variants={itemAnimation}>
@@ -69,9 +70,10 @@ export const AboutMeHeader = ({ open }: { open: boolean }) => (
 					mt={".5rem"}
 					className="about-me__header__content"
 				>
-					My focus is on combining functionality and design to deliver
-					exceptional user experiences that drive efficiency and customer
-					satisfaction.
+					I build end-to-end web products and pair them with AI automation that
+					moves real business metrics — from cutting a 6-month legal workflow
+					down to a single week, to running multichannel AI agents that handle
+					hundreds of leads every month.
 				</Text>
 			</motion.div>
 			{/* {open && (
