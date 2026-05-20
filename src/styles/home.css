@@ -111,7 +111,7 @@ main {
 }
 
 @media (max-width: 900px) or (min-height: 75vw) {
-	main {
+	main.animated-gradient-background {
 		height: auto;
 		min-height: 100vh;
 		overflow: visible;
