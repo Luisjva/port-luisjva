@@ -8,7 +8,53 @@
 	justify-content: center;
 	gap: 0.5rem;
 	padding: 1rem;
+	overflow: hidden;
 }
 .home__cv:hover {
 	background-color: #2f355199;
+}
+.home__cv-title {
+	font-size: 1.6rem;
+	text-align: center;
+}
+.home__cv-description {
+	color: #fffb;
+	font-size: 1.1rem;
+	text-align: center;
+}
+.home__cv-icon {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+	.home__cv {
+		gap: 0.25rem;
+		padding: 0.5rem;
+	}
+	.home__cv-title {
+		font-size: 1rem;
+	}
+	.home__cv-description {
+		font-size: 0.75rem;
+		line-height: 1.1;
+	}
+	.home__cv-icon {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media (max-width: 550px) {
+	.home__cv-title {
+		font-size: 0.95rem;
+	}
+	.home__cv-description {
+		display: none;
+	}
+	.home__cv-icon {
+		width: 36px;
+		height: 36px;
+	}
 }

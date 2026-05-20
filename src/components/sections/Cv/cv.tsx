@@ -31,7 +31,7 @@ export const Cv: React.FC<{
 		setTimeout(() => {
 			const link = document.createElement("a");
 			link.href = cvPath;
-			link.download = "Luis_Villegas_CV.pdf";
+			link.download = "CV_Luis_Villegas_EN.pdf";
 			link.click();
 
 			setIsDownloading(false);
@@ -43,19 +43,19 @@ export const Cv: React.FC<{
 
 	return (
 		<div className={`home__cv`} onClick={handleDownloadCV}>
-			<Text fw={800} style={{ fontSize: "1.6rem", textAlign: "center" }}>
+			<Text fw={800} className="home__cv-title">
 				Want to know more?{" "}
 			</Text>
 
-			<Text style={{ color: "#fffb", fontSize: "1.1rem", textAlign: "center" }}>
+			<Text className="home__cv-description">
 				Click to download my CV and discover how I can contribute to your team.
 			</Text>
 
-			<Center>
+			<Center className="home__cv-icon">
 				{isDownloading ? (
-					<Loader size={50} color="#fff" />
+					<Loader size="100%" color="#fff" />
 				) : (
-					<TbDownload size={50} />
+					<TbDownload size="100%" />
 				)}
 			</Center>
 		</div>
