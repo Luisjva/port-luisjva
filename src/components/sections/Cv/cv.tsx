@@ -53,7 +53,7 @@ export const Cv: React.FC<{
 
 			<Center className="home__cv-icon">
 				{isDownloading ? (
-					<Loader size="100%" color="#fff" />
+					<Loader size={32} color="#fff" />
 				) : (
 					<TbDownload size="100%" />
 				)}
