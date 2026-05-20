@@ -1,6 +1,7 @@
 import { AboutMeFirstWorks } from "./AboutMeFirstWorks";
 import { AboutMeHeader } from "./AboutMeHeader";
 import { AboutMeMyBeginnings } from "./AboutMeMeginnings";
+import { AboutMeUrpe } from "./AboutMeUrpe";
 
 export const AboutMe = ({
 	open,
@@ -14,8 +15,9 @@ export const AboutMe = ({
 			<AboutMeHeader open={open} />
 			{open && (
 				<div className="about-me__first-works">
-					<AboutMeMyBeginnings />
+					<AboutMeUrpe />
 					<AboutMeFirstWorks setCurrentContent={setCurrentContent} />
+					<AboutMeMyBeginnings />
 				</div>
 			)}
 		</div>

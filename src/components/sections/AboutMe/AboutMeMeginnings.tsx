@@ -53,7 +53,7 @@ export const AboutMeMyBeginnings = () => (
 						opacity: 0.8,
 					}}
 				>
-					From circuits to code
+					Before all of this — from circuits to code
 				</Text>
 			</motion.div>
 
@@ -65,9 +65,8 @@ export const AboutMeMyBeginnings = () => (
 					}}
 					mt={".25rem"}
 				>
-					I started in Electrical & Electronic Engineering and ended up
-					building AI-powered platforms — systems thinking was always the
-					bridge.
+					I started in Electrical & Electronic Engineering — systems thinking
+					was always the bridge into software.
 				</Text>
 			</motion.div>
 
@@ -81,23 +80,16 @@ export const AboutMeMyBeginnings = () => (
 				>
 					I spent four years studying <b>Electrical & Electronic Engineering</b>{" "}
 					at UNEXPO (Venezuela), wiring circuits and reasoning about systems
-					end-to-end. Somewhere along the way I realized the same mindset —
-					decomposing a problem, designing the flow, measuring what happens —
-					translated almost perfectly to software.
+					end-to-end. The same mindset — decomposing a problem, designing the
+					flow, measuring what happens — translated almost perfectly to
+					software, and pulled me into web development for good.
 					<br />
 					<br />
-					That click pulled me into web development. I went deep on{" "}
-					<b>JavaScript</b>, then on <b>React</b>, <b>Next.js</b> and{" "}
-					<b>Node.js</b>, and started shipping real products. Over the next few
-					years I worked across the full stack — from real-time multimedia
-					apps to internal dashboards — and grew into a Tech Lead role.
-					<br />
-					<br />
-					Today my focus is the intersection of product engineering and{" "}
-					<b>AI automation</b>: <b>LLMs</b>, <b>RAG</b>, conversational agents
-					and multichannel workflows. I&apos;m most interested in building
-					platforms where AI is not a demo, but a measurable lever for the
-					business behind it.
+					That same instinct keeps pulling me toward building things from
+					scratch. On top of my day job, I co-founded <b>Citafy</b>, a SaaS for
+					appointment management aimed at the LATAM market. I mapped the
+					system end-to-end and I&apos;m currently leading the technical
+					direction, shipping the MVP on <b>Next.js</b> and <b>PostgreSQL</b>.
 				</Text>
 			</motion.div>
 		</Box>

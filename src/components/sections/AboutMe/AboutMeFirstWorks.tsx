@@ -23,7 +23,7 @@ export const AboutMeFirstWorks = ({
 								opacity: 0.8,
 							}}
 						>
-							Nolatech & Epale — where I grew up as a developer
+							Nolatech & Epale — three years that shaped how I ship
 						</Text>
 					</motion.div>
 					<motion.div variants={itemAnimation}>
